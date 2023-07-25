@@ -33,7 +33,7 @@ const MyApp = (props: MyAppProps) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <title>Modernize NextJs Free Admin template</title>
+        <title>Bank Sampah</title>
       </Head>
       <ThemeProvider
         theme={theme}

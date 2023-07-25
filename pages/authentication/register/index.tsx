@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 import { Grid, Box, Card, Typography, Stack } from '@mui/material';
-import Link  from 'next/link';
+import Link from 'next/link';
 import PageContainer from '../../../src/components/container/PageContainer';
 import Logo from '../../../src/layouts/full/shared/logo/Logo';
-import AuthRegister from '../auth/AuthRegister';
+import AuthRegister from '@/components/auth/AuthRegister';
 import BlankLayout from '../../../src/layouts/blank/BlankLayout';
 
 const Register2 = () => (
@@ -49,9 +49,9 @@ const Register2 = () => (
                   <Typography color="textSecondary" variant="h6" fontWeight="400">
                     Already have an Account?
                   </Typography>
-                  <Typography 
+                  <Typography
                     component={Link}
-                    href="/authentication/login"
+                    href="/login"
                     fontWeight="500"
                     sx={{
                       textDecoration: 'none',

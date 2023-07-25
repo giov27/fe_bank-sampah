@@ -1,0 +1,3 @@
+interface garbages {
+  num: number;
+}

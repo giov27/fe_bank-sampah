@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import type { ReactElement } from 'react';
 import { Grid, Box, Card, Stack, Typography } from '@mui/material';
-import BlankLayout from '../../../src/layouts/blank/BlankLayout';
+
+import BlankLayout from '@/layouts/blank/BlankLayout';
+import Logo from '@/layouts/full/shared/logo/Logo';
 
 // components
-import PageContainer from '../../../src/components/container/PageContainer';
-import Logo from '../../../src/layouts/full/shared/logo/Logo';
-import AuthLogin from '../auth/AuthLogin';
+import PageContainer from '@/components/container/PageContainer';
+import AuthLogin from '@/features/auth/components/AuthLogin';
 
 
-const Login2 = () => {
+const Login = () => {
 
   return (
     <PageContainer title="Login" description="this is Login page">
@@ -46,13 +47,13 @@ const Login2 = () => {
               <AuthLogin
                 subtext={
                   <Typography variant="subtitle1" textAlign="center" color="textSecondary" mb={1}>
-                    Your Social Campaigns
+                    Ubah Sampah Jadi Duit Bro
                   </Typography>
                 }
                 subtitle={
                   <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
                     <Typography color="textSecondary" variant="h6" fontWeight="500">
-                      New to Modernize?
+                      Belum punya akun?
                     </Typography>
                     <Typography
                       component={Link}
@@ -63,7 +64,7 @@ const Login2 = () => {
                         color: 'primary.main',
                       }}
                     >
-                      Create an account
+                      Buat akun
                     </Typography>
                   </Stack>
                 }
@@ -75,8 +76,8 @@ const Login2 = () => {
     </PageContainer>
   );
 };
-export default Login2;
+export default Login;
 
-Login2.getLayout = function getLayout(page: ReactElement) {
+Login.getLayout = function getLayout(page: ReactElement) {
   return <BlankLayout>{page}</BlankLayout>;
 };
