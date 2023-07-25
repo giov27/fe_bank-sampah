@@ -15,15 +15,6 @@ const login = async (loginData: Login) => {
         reject(err.response.data);
       });
   });
-
-  // console.log(data.token);
-  // localStorage.setItem('TOKEN_BS', data.token);
-  // toast.success(message);
-  // router.push('/');
-  // } catch (e) {
-  //   toast.warning("Error!");
-  //   console.warn(e)
-  // }
 };
 
 const authService = {
